@@ -191,7 +191,7 @@ async def incoming_compress_message_f(update):
   sent_message = await bot.send_message(
   chat_id=update.chat.id,
   text=Localisation.DOWNLOAD_START,
-  reply_to_message_id=update.message_id
+  reply_to_message_id=update.message.id
               )
   chat_id = LOG_CHANNEL
   utc_now = datetime.datetime.utcnow()
@@ -350,7 +350,7 @@ async def incoming_compress_message_f(update):
         force_document=True,
         #duration=duration,
         thumb="thumb.jpg",
-        reply_to_message_id=update.message_id,
+        reply_to_message_id=update.message.id,
         progress=progress_for_pyrogram,
         progress_args=(
           bot,
@@ -452,5 +452,5 @@ async def incoming_cancel_message_f(bot, update):
     await bot.send_message(
       chat_id=update.chat.id,
       text="No active compression exists",
-      reply_to_message_id=update.message_id
+      reply_to_message_id=update.message.id
     )
