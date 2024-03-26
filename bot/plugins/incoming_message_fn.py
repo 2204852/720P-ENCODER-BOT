@@ -44,6 +44,7 @@ CHAT_FLOOD = {}
 broadcast_ids = {}
 bot = app        
 async def incoming_start_message_f(bot, update):
+    print(update)
     """/start command"""
  
   #  update_channel = UPDATES_CHANNEL
