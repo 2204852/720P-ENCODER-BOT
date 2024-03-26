@@ -350,7 +350,7 @@ async def incoming_compress_message_f(update):
         force_document=True,
         #duration=duration,
         thumb="thumb.jpg",
-        reply_to_message_id=update.message.id,
+        reply_to_message_id=update.message_id,
         progress=progress_for_pyrogram,
         progress_args=(
           bot,
