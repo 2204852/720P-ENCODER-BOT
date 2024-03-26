@@ -12,9 +12,9 @@ class Config(object):
 
     # sucks Dude
 
-    APP_ID = get_config("APP_ID", "5009612")
+    APP_ID = get_config("APP_ID", "")
 
-    API_HASH = get_config("API_HASH", "999bf38a58a1332ed01591f0624b5768")
+    API_HASH = get_config("API_HASH", "")
 
     LOG_CHANNEL = get_config("LOG_CHANNEL", "Animalwebdual2023")
 
