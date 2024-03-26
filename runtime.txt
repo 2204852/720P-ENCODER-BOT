@@ -1,9 +1,1 @@
 python-3.10.10
-Pillow
-psutil
-hachoir
-tgcrypto
-pyrogram
-motor
-https://github.com/Tinche/aiofiles/archive/master.zip
-dnspython
